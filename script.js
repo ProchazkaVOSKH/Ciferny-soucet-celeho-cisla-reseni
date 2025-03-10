@@ -2,7 +2,8 @@
 function digitSum(c) {
     let numStr = c.toString();                    // převedeme číslo na řetězec, abychom mohli
                                                   // procházet jednotlivé jeho číselné znaky (tato funkce je v mém řešení nadbytečná,
-                                                  // protože hodnota do funkce už vstoupí jako řetězcová - vstup z vlastnosti value textboxu)
+                                                  // protože hodnota do funkce už vstoupí jako řetězcová - vstup z vlastnosti value textboxu);
+                                                  // metodu toString() lze nahradit konstruktorovou funkcí String(c), tedy let numStr = String(c)
     let s = 0;
     for (let i = 0; i < numStr.length; i++) {     // projdeme všechny znaky řetězce
       s += Number(numStr[i]);                     // vezmeme itý znak, převedeme ho na číslený typ a následně ho přičteme k cifernému součtu
