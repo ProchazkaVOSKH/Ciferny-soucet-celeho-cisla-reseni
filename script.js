@@ -1,11 +1,12 @@
 // Funkce, která spočítá ciferný součet čísla pomocí cyklu for.
 function digitSum(c) {
-    let numStr = c.toString();
+    let numStr = c.toString();                    // převedeme číslo na řetězec, abychom mohli
+                                                  // procházet jednotlivé jeho číselné znaky
     let s = 0;
-    for (let i = 0; i < numStr.length; i++) {
-      s += Number(numStr[i]);
+    for (let i = 0; i < numStr.length; i++) {     // projdeme všechny znaky řetězce
+      s += Number(numStr[i]);                     // vezmeme itý znak, převedeme ho na číslený typ a následně ho přičteme k cifernému součtu
     }
-    return s;
+    return s;                                     // funkce vrací výsledný ciferný součet
   }
 
 // Funkce, která spočítá ciferný součet čísla pomocí cyklu while.
